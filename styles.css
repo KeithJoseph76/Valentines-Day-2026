@@ -159,8 +159,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px 20px;
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: none;
     transition: all 0.8s var(--ease);
     position: relative;
     position: relative;
@@ -1595,4 +1595,9 @@ body,
 .timeline-text,
 .reason-card p {
     font-family: 'Inter', system-ui, sans-serif;
+}
+
+#timeline {
+    opacity: 1 !important;
+    transform: none !important;
 }
