@@ -291,6 +291,14 @@ function animateGallery() {
     });
 }
 
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            card.classList.add('show');
+        });
+    }, 1200);
+});
+
 function animateReasons() {
     const cards = document.querySelectorAll('.reason-card');
     cards.forEach((card, index) => {
@@ -661,13 +669,7 @@ function showToast(message) {
         setTimeout(() => toast.remove(), 500);
     }, 3000);
 }
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        document.querySelectorAll('.timeline-item').forEach(item => {
-            item.classList.add('show');
-        });
-    }, 1000);
-});
+
 // ===== Console Easter Egg =====
 console.log('%c💖 Welcome to Our Love Story! 💖', 'color: #ff1493; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(255,20,147,0.5);');
 console.log('%c✨ Made with love and code ✨', 'color: #ff69b4; font-size: 16px;');
