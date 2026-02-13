@@ -467,7 +467,7 @@ function openCountdown() {
 }
 
 function startCountdown() {
-    const valentineDay = new Date('February 13, 2026 22:16:00').getTime();
+    const valentineDay = new Date('February 13, 2026 23:08:00').getTime();
     
     countdownTimer = setInterval(() => {
         const now = new Date().getTime();
